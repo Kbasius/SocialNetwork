@@ -9,3 +9,6 @@ lerna-debug.log*
 
 # .env file
 .env
+
+# Node.js dependencies
+node_modules/

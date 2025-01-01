@@ -1,0 +1,33 @@
+{
+  "name": "socialnetwork",
+  "version": "1.0.0",
+  "description": "Challenge # 17 Social Network\r This ReadME was created with a ReadME genereator : https://github.com/Kbasius/ReadM_Generator",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && node dist/server.js",
+    "start:dev": "ts-node src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kbasius/SocialNetwork.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Kbasius/SocialNetwork/issues"
+  },
+  "homepage": "https://github.com/Kbasius/SocialNetwork#readme",
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.9.2"
+  }
+}
