@@ -1,5 +1,5 @@
 // importing user from userModels.ts
-import { Request, Response } from 'express';
+import { NextFunction, Request, Response } from 'express';
 import User from '../models/userModel';
 
 // having no overload matches this call errors, cause we dont know how to handle id?
@@ -19,9 +19,8 @@ export const createUser = async (req: Request, res: Response) => {
     }
 };
 
-
 // starts a function named getUserProfile
-/*
+
 export const getUserProfile = async (req: Request<UserParams>, res: Response): Promise<Response> => {
     try {
         const userId = req.params.id;
@@ -34,13 +33,14 @@ export const getUserProfile = async (req: Request<UserParams>, res: Response): P
         return res.status(500).send('Server error'); 
     }
 };
-*/
+
+/*
 // this is a mock version of the function above
 export const getUserProfile = async (req: Request<UserParams>, res: Response): Promise<Response> => {
     const userId = req.params.id; // Accessing the id parameter from req.params
     return res.json({ id: userId, name: "Mock User" }); // Mock response
 };
-
+*/
 
 // starts a function named updateUserProfile 
 export const updateUserProfile = async (req: Request<UserParams>, res: Response): Promise<Response> => {
