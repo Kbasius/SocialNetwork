@@ -1,4 +1,4 @@
-# Logs
+# Ignore Logs
 logs
 *.log
 npm-debug.log*
@@ -7,8 +7,12 @@ yarn-error.log*
 lerna-debug.log*
 .pnpm-debug.log*
 
-# .env file
+# Ignore .env file
 .env
 
-# Node.js dependencies
+# Ignore Node.js dependencies
 node_modules/
+
+# Ignore compiled JavaScript files
+/dist/
+*.js
